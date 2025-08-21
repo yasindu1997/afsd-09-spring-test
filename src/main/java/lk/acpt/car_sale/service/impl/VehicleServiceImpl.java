@@ -101,7 +101,7 @@ public class VehicleServiceImpl implements VehicleService {
         }
 
         vehicle.setSpareParts(list);
-        Vehicle save = vehicleRepo.save(vehicle);
+        vehicleRepo.save(vehicle);
 
         return vehicleWithSparePartsDto;
     }
